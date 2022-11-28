@@ -88,8 +88,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("ℹ️ Sobre", callback_data = "about"),
+                    InlineKeyboardButton("❌ Fechar", callback_data = "close")
                 ]
             ]
         )
@@ -110,7 +110,7 @@ async def start_command(client: Client, message: Message):
     
 #=====================================================================================##
 
-WAIT_MSG = """"<b>Processing ...</b>"""
+WAIT_MSG = """"<b>Processando...</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
 
@@ -123,7 +123,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "Inscrever-se no canal",
                 url = client.invitelink)
         ]
     ]
@@ -131,7 +131,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'Tente novamente',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
@@ -169,7 +169,7 @@ async def send_text(client: Bot, message: Message):
         deleted = 0
         unsuccessful = 0
         
-        pls_wait = await message.reply("<i>Broadcasting Message.. This will Take Some Time</i>")
+        pls_wait = await message.reply("<i>Enviando mensagem... Isso vai levar um tempinho</i>")
         for chat_id in query:
             try:
                 await broadcast_msg.copy(chat_id)
@@ -189,7 +189,7 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>Broadcast Completed</u>
+        status = f"""<b><u>Mensagem enviada</u>
 
 Total Users: <code>{total}</code>
 Successful: <code>{successful}</code>
