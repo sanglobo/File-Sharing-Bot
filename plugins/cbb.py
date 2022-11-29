@@ -10,12 +10,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>➢<a href='https://t.me/HUBdaTV'>Canal Principal</a></b>\n➢<b><a href='https://t.me/+c9sK7H99Q2MwZmFh'>Grupo</a></b>\n➢<b><a href='https://t.me/HUBdaTV_bot'>Pedidos</a></b>\n\n<b>ʟɪɴᴋs ᴏғғʟɪɴᴇ ᴅᴇᴠᴇᴍ sᴇʀ ʀᴇᴘᴏʀᴛᴀᴅᴏs ɴᴏ ɢʀᴜᴘᴏ ᴏᴜ ɴᴏ ʙᴏᴛ ᴅᴇ ᴘᴇᴅɪᴅᴏs.</b>",
+            text = f"<b>➢ <a href='https://t.me/HUBdaTV'>Canal Principal</a></b>\n➢ <b><a href='https://t.me/+c9sK7H99Q2MwZmFh'>Grupo</a></b>\n➢ <b><a href='https://t.me/HUBdaTV_bot'>Pedidos</a></b>\n\n<b>ʟɪɴᴋs ᴏғғʟɪɴᴇ ᴅᴇᴠᴇᴍ sᴇʀ ʀᴇᴘᴏʀᴛᴀᴅᴏs ɴᴏ ɢʀᴜᴘᴏ ᴏᴜ ɴᴏ ʙᴏᴛ ᴅᴇ ᴘᴇᴅɪᴅᴏs.</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("❌ Fechar", callback_data = "close")
                     ]
                 ]
             )
