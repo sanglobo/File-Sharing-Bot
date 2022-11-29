@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>➢Canal Principal:<\b> @hubdatv\n➢Grupo: <a href='https://t.me/+c9sK7H99Q2MwZmFh'>Entre aqui</a>\n➢<b>Pedidos:<\b> <a href='https://t.me/HUBdaTV_bot'>Faça aqui</a>\n\n<b>LINKS OFFLINE DEVEM SER REPORTADOS NO GRUPO OU NO BOT DE PEDIDOS.<\b>",
+            text = f"<b>➢<a href='https://t.me/HUBdaTV'>Canal Principal</a></b>\n➢<b><a href='https://t.me/+c9sK7H99Q2MwZmFh'>Grupo</a></b>\n➢<b><a href='https://t.me/HUBdaTV_bot'>Pedidos</a></b>\n\n<b>ʟɪɴᴋs ᴏғғʟɪɴᴇ ᴅᴇᴠᴇᴍ sᴇʀ ʀᴇᴘᴏʀᴛᴀᴅᴏs ɴᴏ ɢʀᴜᴘᴏ ᴏᴜ ɴᴏ ʙᴏᴛ ᴅᴇ ᴘᴇᴅɪᴅᴏs.</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
