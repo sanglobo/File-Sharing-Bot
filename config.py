@@ -46,9 +46,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<h1>Oi {mention}</h1>
-
-<p><strong><span style="background-color:#FF8C00">Voc&ecirc; precisa se inscrever no @hubdatv para conseguir acessar os arquivos do canal de onde veio.</span></strong></p>
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<h1>Oi {mention}</h1><p><strong><span style="background-color:#FF8C00">Voc&ecirc; precisa se inscrever no @hubdatv para conseguir acessar os arquivos do canal de onde veio.</span></strong></p>
 ")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
