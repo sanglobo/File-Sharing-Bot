@@ -124,7 +124,7 @@ async def not_joined(client: Client, message: Message):
         [
             InlineKeyboardButton(
                 "Inscrever-se no canal",
-                url = client.invitelink)
+                url = "https://suaurl.com/sessaogloboplay")
         ]
     ]
     try:
