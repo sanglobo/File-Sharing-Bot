@@ -123,7 +123,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Inscrever-se no canal",
+                "Assistir anúncio e se inscrever no canal",
                 url = "https://suaurl.com/sessaogloboplay")
         ]
     ]
